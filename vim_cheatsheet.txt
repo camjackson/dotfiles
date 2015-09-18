@@ -1,0 +1,48 @@
+Surroundings:
+
+cs"'       "Hello world" -> 'Hello world'          Change Surrounds from " to '
+cs"<q>     "Hello world" -> <q>Hello world</q>
+ds"        "Hello world" -> Hello world            Delete Surrounds
+
+
+ysiw]       Hello world -> [Hello]                 ? Surround In Word with [ (no spaces)
+ysiw{       Hello world -> { Hello }               ? Surround In Word with { (with spaces)
+yssb)       Hello world -> (Hello world)           ? Surround Line with ( (no spaces)
+
+S<p>        Hello world (Selected) -> <p>\n\tHello world\n</p>
+
+
+Autocomplete:
+<tab>
+
+Indent:
+>> for one Line
+<select>, > for multiple lines
+>% for all lines up to the matching bracket
+>i{      indent In {
+
+Repeat action:
+.
+
+Scrolling:
+Ctrl+e   scroll down
+Ctrl+y   scroll up
+
+Window management:
+:sp         Split the window horizontally
+:vs         Split the window vertically
+Ctrl+ww     Next window
+:vertical resize 80
+:vertical resize +5
+
+
+Buffer management:
+:ls         List all open buffers
+:bnext      Open next Buffer
+:bw         Close Buffer
+
+Navigation:
+gd          Go to Definition
++           Expand selection
+_           Contract selection
+

@@ -43,7 +43,7 @@ alias bert="bundle exec rake -T"
 export RUST_SRC_PATH="~/code/rust/src"
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
 # Docker
 export DOCKER_HOST="tcp://192.168.59.103:2375"
@@ -76,12 +76,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Unknown
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
-# MYOB stuff
-source ~/.myob_secrets
-
 # home bin
 export PATH="$PATH:$HOME/bin"
 
-# Make JRuby use nailgun
-#export JRUBY_OPTS="$JRUBY_OPTS --ng"
-
+source ~/.secrets

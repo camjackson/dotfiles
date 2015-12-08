@@ -48,9 +48,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # Docker
 export DOCKER_HOST="tcp://192.168.59.103:2375"
 
-# MacPorts
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -60,6 +57,9 @@ export PATH="$PATH:$GOPATH/bin"
 
 # Postgres
 export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+
+# NPM
+export PATH="$PATH:$HOME/.npm-packages/bin"
 
 # Editor:
 export VISUAL="vim"

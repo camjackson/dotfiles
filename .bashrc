@@ -61,6 +61,9 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 # NPM
 export PATH="$PATH:$HOME/.npm-packages/bin"
 
+# Phantomjs
+export PHANTOMJS_BIN="~/bin/phantomjs"
+
 # Editor:
 export VISUAL="vim"
 export EDITOR="$VISUAL"

@@ -36,6 +36,9 @@ filetype plugin indent on
 syntax on
 set number
 
+" Column marker
+:set colorcolumn=120
+
 " Highlight search results
 set hlsearch
 

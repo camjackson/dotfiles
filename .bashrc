@@ -81,5 +81,3 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # home bin
 export PATH="$PATH:$HOME/bin"
-
-source ~/.secrets

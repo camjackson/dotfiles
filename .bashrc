@@ -39,6 +39,9 @@ alias be="bundle exec"
 alias ber="bundle exec rake"
 alias bert="bundle exec rake -T"
 
+# DynamoDB
+alias dynamo="cd ~/dynamodb_local && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb"
+
 # Needed for racer (rust autocompletion)
 export RUST_SRC_PATH="~/code/rust/src"
 

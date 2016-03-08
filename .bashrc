@@ -64,8 +64,9 @@ export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 # NPM
 export PATH="$PATH:$HOME/.npm-packages/bin"
 
-# Phantomjs
-export PHANTOMJS_BIN="~/bin/phantomjs"
+# NVM
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
 
 # Editor:
 export VISUAL="vim"
@@ -84,3 +85,6 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # home bin
 export PATH="$PATH:$HOME/bin"
+
+# Secrets
+. ~/bin/secrets.sh

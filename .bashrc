@@ -16,6 +16,7 @@ alias gap="git add -p"
 alias gan="git add -N"
 alias gc='git commit'
 alias gcm="git commit --message"
+alias gca="git commit --amend"
 alias gp="git push"
 alias gpr="git pull --rebase"
 alias gco="git checkout"

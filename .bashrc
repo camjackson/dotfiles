@@ -5,6 +5,11 @@ alias reload='source ~/.bashrc'
 alias ..="cd .."
 alias ts="termrc start"
 
+# Vagrant aliases
+alias vu="vagrant up"
+alias vs="vagrant ssh"
+alias vh="vagrant halt"
+
 # Git aliases
 alias gs="git status"
 alias gl="git log"

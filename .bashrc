@@ -95,3 +95,8 @@ export PATH="$PATH:$HOME/bin"
 
 # Secrets
 . ~/bin/secrets.sh
+
+# Find which process is using a port:
+function port() {
+  lsof -n -i4TCP:$1 | grep LISTEN
+}

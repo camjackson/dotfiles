@@ -28,6 +28,14 @@ alias gpr="git pull --rebase"
 alias gco="git checkout"
 alias gb="git branch"
 alias gu="git reset HEAD"
+alias stash="git stash"
+alias pop="git stash pop"
+
+# Download this file from https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+source ~/git-completion.bash
+
+# yarn
+alias y="yarn"
 
 # Rust aliases
 alias cg="cargo"

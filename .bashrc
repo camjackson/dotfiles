@@ -31,9 +31,6 @@ alias gu="git reset HEAD"
 alias stash="git stash"
 alias pop="git stash pop"
 
-# Download this file from https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-source ~/git-completion.bash
-
 # yarn
 alias y="yarn"
 
@@ -54,6 +51,12 @@ alias be="bundle exec"
 alias ber="bundle exec rake"
 alias bert="bundle exec rake -T"
 
+# Docker
+alias doco="sudo docker-compose"
+
+# Terraform
+alias tf="terraform"
+
 # DynamoDB
 alias dynamo="cd ~/dynamodb_local && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb"
 
@@ -63,15 +66,8 @@ export RUST_SRC_PATH="~/code/rust/src"
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 
-# Docker
-export DOCKER_HOST="tcp://192.168.59.103:2375"
-
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# Golang
-export GOPATH="/users/cjacks/code/go"
-export PATH="$PATH:$GOPATH/bin"
 
 # Postgres
 export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
@@ -96,7 +92,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Unknown
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+# export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # home bin
 export PATH="$PATH:$HOME/bin"

@@ -8,7 +8,10 @@ apm install \
   react \
   language-terraform \
   linter-terraform-syntax \
-  expand-region
+  expand-region \
+  console-log \
+  git-blame \
+  merge-conflicts \
 
 echo "Don't forget to:"
 echo " 1. Turn on autosave"

@@ -12,6 +12,7 @@ apm install \
   console-log \
   git-blame \
   merge-conflicts \
+  highlight-selected \
 
 echo "Don't forget to:"
 echo " 1. Turn on autosave"

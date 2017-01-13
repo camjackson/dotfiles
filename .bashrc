@@ -43,8 +43,6 @@ alias cgu="cargo update"
 alias cgt="cargo test"
 alias rs="rustc"
 alias rsv="rustc --version"
-alias mr="multirust"
-alias mrd="multirust default"
 
 # Ruby aliases
 alias be="bundle exec"

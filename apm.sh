@@ -14,6 +14,7 @@ apm install \
   merge-conflicts \
   highlight-selected \
   language-docker \
+  next-line-comment \
 
 echo "Don't forget to:"
 echo " 1. Turn on autosave"

@@ -30,6 +30,7 @@ alias gb="git branch"
 alias gu="git reset HEAD"
 alias stash="git stash"
 alias pop="git stash pop"
+alias gcl="git clone"
 
 # yarn
 alias y="yarn"

@@ -5,7 +5,7 @@ apm install \
   linter-eslint \
   hyperclick \
   js-hyperclick \
-  react \
+  language-babel \
   language-terraform \
   linter-terraform-syntax \
   expand-region \

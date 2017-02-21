@@ -51,7 +51,7 @@ alias ber="bundle exec rake"
 alias bert="bundle exec rake -T"
 
 # Docker
-alias doco="sudo docker-compose"
+alias doco="docker-compose"
 
 # Terraform
 alias tf="terraform"

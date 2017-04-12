@@ -103,3 +103,8 @@ export PATH="$PATH:$HOME/bin"
 function port() {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
+
+# REA Stuff
+export REA_LDAP_USER="cam.jackson"
+alias reaws='env $(rea-as saml money-nonprod-developer)'
+alias readocker='reaws rea-slip-docker-login'

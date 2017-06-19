@@ -32,6 +32,10 @@ alias stash="git stash"
 alias pop="git stash pop"
 alias gcl="git clone"
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # yarn
 alias y="yarn"
 

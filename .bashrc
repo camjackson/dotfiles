@@ -3,7 +3,7 @@ alias reload='source ~/.bashrc'
 
 # General aliases
 alias ..="cd .."
-alias ts="termrc start"
+alias a.="atom ."
 
 # Vagrant aliases
 alias va="vagrant"

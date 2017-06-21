@@ -82,6 +82,9 @@ export PATH="$PATH:$HOME/.npm-packages/bin"
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
+# Rust/Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Editor:
 export VISUAL="vim"
 export EDITOR="$VISUAL"
@@ -108,7 +111,3 @@ function port() {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
 
-# REA Stuff
-export REA_LDAP_USER="cam.jackson"
-alias reaws='env $(rea-as saml money-nonprod-developer)'
-alias readocker='reaws rea-slip-docker-login'

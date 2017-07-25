@@ -67,9 +67,10 @@ alias dynamo="cd ~/dynamodb_local && java -Djava.library.path=./DynamoDBLocal_li
 export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
 
 # OpenSSL header paths etc (needed for some rust stuff)
-export OPENSSL_INCLUDE_DIR=`brew --prefix openssl`/include
-export OPENSSL_LIB_DIR=`brew --prefix openssl`/lib
-export DEP_OPENSSL_INCLUDE=`brew --prefix openssl`/include
+# Ideally "/usr/local/opt/openssl" should come from `brew --prefix openssl` but it is slow
+export OPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include
+export OPENSSL_LIB_DIR=/usr/local/opt/openssl/lib
+export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
@@ -85,7 +86,8 @@ export PATH="$PATH:$HOME/.npm-packages/bin"
 
 # NVM
 export NVM_DIR=~/.nvm
-. $(brew --prefix nvm)/nvm.sh
+# Ideally "/usr/local/opt/nvm" should come from `brew --prefix nvm` but it is slow
+# . /usr/local/opt/nvm/nvm.sh
 
 # Rust/Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -115,4 +117,3 @@ export PATH="$PATH:$HOME/bin"
 function port() {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
-

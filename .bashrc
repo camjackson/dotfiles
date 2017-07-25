@@ -64,7 +64,12 @@ alias tf="terraform"
 alias dynamo="cd ~/dynamodb_local && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb"
 
 # Needed for racer (rust autocompletion)
-export RUST_SRC_PATH="~/code/rust/src"
+export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
+
+# OpenSSL header paths etc (needed for some rust stuff)
+export OPENSSL_INCLUDE_DIR=`brew --prefix openssl`/include
+export OPENSSL_LIB_DIR=`brew --prefix openssl`/lib
+export DEP_OPENSSL_INCLUDE=`brew --prefix openssl`/include
 
 # Java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`

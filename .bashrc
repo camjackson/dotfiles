@@ -4,6 +4,7 @@ alias reload='source ~/.bashrc'
 # General aliases
 alias ..="cd .."
 alias a.="atom ."
+alias diff="colordiff"
 
 # Vagrant aliases
 alias va="vagrant"

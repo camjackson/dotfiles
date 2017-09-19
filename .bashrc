@@ -31,7 +31,9 @@ alias gb="git branch"
 alias gu="git reset HEAD"
 alias stash="git stash"
 alias pop="git stash pop"
-alias gcl="git clone"
+function gcl() {
+  git clone git@github.com:${1}/${2}
+}
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash

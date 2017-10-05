@@ -49,6 +49,7 @@ alias cgr="cargo run"
 alias cgc="cargo clean"
 alias cgu="cargo update"
 alias cgt="cargo test"
+alias cgw="cargo watch"
 alias rs="rustc"
 alias rsv="rustc --version"
 

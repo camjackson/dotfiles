@@ -31,7 +31,8 @@ alias gb="git branch"
 alias gu="git reset HEAD"
 alias stash="git stash"
 alias pop="git stash pop"
-function gcl() {
+alias gcl="git clone"
+function ghcl() {
   git clone git@github.com:${1}/${2}
 }
 

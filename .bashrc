@@ -62,6 +62,7 @@ alias bert="bundle exec rake -T"
 # Docker
 alias doco="docker-compose"
 alias drm="docker ps -aq | xargs docker rm -f"
+alias dps="docker ps -a"
 
 # Terraform
 alias tf="terraform"

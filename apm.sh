@@ -2,6 +2,7 @@
 
 apm install \
   linter \
+  linter-ui-default \
   linter-eslint \
   hyperclick \
   js-hyperclick \

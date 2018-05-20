@@ -6,12 +6,6 @@ alias ..="cd .."
 alias a.="atom ."
 alias diff="colordiff"
 
-# Vagrant aliases
-alias va="vagrant"
-alias vu="vagrant up"
-alias vs="vagrant ssh"
-alias vh="vagrant halt"
-
 # Git aliases
 alias gs="git status"
 alias gl="git log"
@@ -65,9 +59,6 @@ alias dps="docker ps -a"
 # Terraform
 alias tf="terraform"
 
-# DynamoDB
-alias dynamo="cd ~/dynamodb_local && java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb"
-
 # Needed for racer (rust autocompletion)
 export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
 
@@ -111,9 +102,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # home bin
 export PATH="$PATH:$HOME/bin"
-
-# Secrets
-. ~/bin/secrets.sh
 
 # Find which process is using a port:
 function port() {

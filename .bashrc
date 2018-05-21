@@ -69,7 +69,7 @@ export OPENSSL_LIB_DIR=/usr/local/opt/openssl/lib
 export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+export JAVA_HOME=`/usr/libexec/java_home -v 10`
 
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"

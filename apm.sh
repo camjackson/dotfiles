@@ -17,6 +17,7 @@ apm install \
   language-docker \
   next-line-comment \
   language-patch \
+  file-icons \
 
 echo "Don't forget to:"
 echo " 1. Turn on autosave"

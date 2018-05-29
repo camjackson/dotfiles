@@ -19,6 +19,7 @@ alias gc='git commit'
 alias gcm="git commit --message"
 alias gca="git commit --amend"
 alias gp="git push"
+alias gpu="git push --set-upstream"
 alias gpr="git pull --rebase"
 alias gco="git checkout"
 alias gb="git branch"

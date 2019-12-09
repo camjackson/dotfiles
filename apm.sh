@@ -4,6 +4,7 @@ apm install \
   linter \
   linter-ui-default \
   linter-eslint \
+  prettier-atom \
   hyperclick \
   js-hyperclick \
   language-babel \
@@ -18,6 +19,7 @@ apm install \
   next-line-comment \
   language-patch \
   file-icons \
+  pigments \
 
 echo "Don't forget to:"
 echo " 1. Turn on autosave"

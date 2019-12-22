@@ -20,6 +20,9 @@ apm install \
   language-patch \
   file-icons \
   pigments \
+  atom-typescript \
+  autocomplete-tailwind \
+  language-postcss \
 
 echo "Don't forget to:"
 echo " 1. Turn on autosave"

@@ -115,3 +115,6 @@ function port() {
 
 # Autocompletion for cage
 source ~/code/dotfiles/cage.bash-completion
+
+#VSCode
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

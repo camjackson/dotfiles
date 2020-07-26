@@ -1,0 +1,23 @@
+{
+  "files.autoSave": "onFocusChange",
+  "rust.clippy_preference": "on",
+  "editor.formatOnSave": true,
+  "workbench.editor.enablePreview": false,
+  "editor.scrollBeyondLastLine": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "all",
+  "editor.dragAndDrop": false,
+  "editor.detectIndentation": false,
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  "editor.rulers": [80],
+  "files.enableTrash": false,
+  "files.trimTrailingWhitespace": true,
+  "search.useGlobalIgnoreFiles": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "editor.formatOnPaste": true
+}

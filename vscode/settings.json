@@ -19,5 +19,6 @@
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
-  "editor.formatOnPaste": true
+  "editor.formatOnPaste": true,
+  "workbench.iconTheme": "vscode-icons"
 }

@@ -20,5 +20,7 @@
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "editor.formatOnPaste": true,
-  "workbench.iconTheme": "vscode-icons"
+  "workbench.iconTheme": "vscode-icons",
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile"
 }

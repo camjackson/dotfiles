@@ -22,5 +22,8 @@
   "editor.formatOnPaste": true,
   "workbench.iconTheme": "vscode-icons",
   "window.zoomLevel": 0,
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.minimap.enabled": false,
+  "css.lint.unknownAtRules": "ignore",
+  "editor.find.seedSearchStringFromSelection": false
 }

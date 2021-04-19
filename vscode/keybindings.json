@@ -1,0 +1,10 @@
+[
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.duplicateSelection"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "console.log.wrap.down.prefix"
+  }
+]

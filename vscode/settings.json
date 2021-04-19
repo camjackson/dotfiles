@@ -4,7 +4,6 @@
   "editor.formatOnSave": true,
   "workbench.editor.enablePreview": false,
   "editor.scrollBeyondLastLine": false,
-  "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "all",
@@ -21,9 +20,21 @@
   },
   "editor.formatOnPaste": true,
   "workbench.iconTheme": "vscode-icons",
-  "window.zoomLevel": 0,
   "workbench.startupEditor": "newUntitledFile",
   "editor.minimap.enabled": false,
   "css.lint.unknownAtRules": "ignore",
-  "editor.find.seedSearchStringFromSelection": false
+  "editor.find.seedSearchStringFromSelection": false,
+  "editor.columnSelection": false,
+  "go.useLanguageServer": true,
+  "files.insertFinalNewline": true,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "vsicons.dontShowNewVersionMessage": true,
+  "editor.suggest.showSnippets": false,
+  "editor.wordBasedSuggestions": false,
+  "javascript.suggest.names": false
 }

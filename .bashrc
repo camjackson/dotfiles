@@ -1,3 +1,8 @@
+# Make zsh more like bash
+setopt NO_BEEP NO_AUTOLIST BASH_AUTOLIST  NO_AUTO_MENU
+bindkey "^[[H" beginning-of-line
+bindkey "^[[F" end-of-line
+
 # Reload this file
 alias reload='source ~/.bashrc'
 
@@ -114,7 +119,7 @@ function port() {
 }
 
 # Autocompletion for cage
-source ~/code/dotfiles/cage.bash-completion
+#source ~/code/dotfiles/cage.bash-completion
 
 #VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

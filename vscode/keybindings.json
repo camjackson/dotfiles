@@ -6,5 +6,13 @@
   {
     "key": "ctrl+l",
     "command": "console.log.wrap.down.prefix"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.files.action.showActiveFileInExplorer"
   }
 ]

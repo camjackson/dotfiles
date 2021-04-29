@@ -1,6 +1,7 @@
 code --install-extension 13xforever.language-x86-64-assembly
 code --install-extension blakeh.jump-to-test
 code --install-extension bradlc.vscode-tailwindcss
+code --install-extension cesium.gltf-vscode
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension ecmel.vscode-html-css
 code --install-extension esbenp.prettier-vscode

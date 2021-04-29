@@ -24,7 +24,6 @@
   "editor.minimap.enabled": false,
   "css.lint.unknownAtRules": "ignore",
   "editor.find.seedSearchStringFromSelection": false,
-  "editor.columnSelection": false,
   "go.useLanguageServer": true,
   "files.insertFinalNewline": true,
   "workbench.editorAssociations": [
@@ -36,5 +35,6 @@
   "vsicons.dontShowNewVersionMessage": true,
   "editor.suggest.showSnippets": false,
   "editor.wordBasedSuggestions": false,
-  "javascript.suggest.names": false
+  "javascript.suggest.names": false,
+  "explorer.autoReveal": false
 }

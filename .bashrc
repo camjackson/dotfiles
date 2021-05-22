@@ -45,6 +45,9 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+# Yarn
+alias yws="yarn workspace"
+
 # Rust aliases
 alias cg="cargo"
 alias cgb="cargo build"

@@ -1,13 +1,8 @@
 [user]
 	name = Cam Jackson
-	email = camjackson89@gmail.com
+	email = 1930451+camjackson@users.noreply.github.com
 [core]
 	excludesfile = ~/.gitignore_global
-[difftool "sourcetree"]
-	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-[mergetool "sourcetree"]
-	cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-	trustExitCode = true
 [push]
 	default = simple
 [log]

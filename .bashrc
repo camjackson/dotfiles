@@ -1,5 +1,6 @@
 # Make zsh more like bash
 setopt NO_BEEP NO_AUTOLIST BASH_AUTOLIST  NO_AUTO_MENU
+setopt interactivecomments
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 
@@ -10,8 +11,10 @@ alias reload='source ~/.bashrc'
 alias ..="cd .."
 alias a.="atom ."
 alias diff="colordiff"
+alias c.="code ."
 
 # Git aliases
+type git-together >/dev/null 2>&1 && alias git=git-together
 alias gs="git status"
 alias gl="git log"
 alias gd="git diff"
@@ -24,11 +27,16 @@ alias gan="git add -N"
 alias gc='git commit'
 alias gcm="git commit --message"
 alias gca="git commit --amend"
+alias gcaq="git commit --amend --no-edit --no-verify" #q = quick
 alias gp="git push"
 alias gpu="git push --set-upstream"
 alias gpr="git pull --rebase --autostash"
 alias grb="git rebase --autostash"
+alias grbi="git rebase --interactive"
 alias grbc="git rebase --continue"
+alias grs="git reset --soft"
+alias grh="git reset --hard"
+alias gm="git merge"
 alias gco="git checkout"
 alias gb="git branch"
 alias gbd="git branch -D"
@@ -47,6 +55,13 @@ fi
 
 # Yarn
 alias yws="yarn workspace"
+alias ywsf="yarn workspace frontend"
+alias ywsb="yarn workspace backend"
+
+# Pulumi
+alias plm="pulumi"
+alias pup="pulumi up"
+export PULUMI_CONFIG_PASSPHRASE=
 
 # Rust aliases
 alias cg="cargo"
@@ -68,6 +83,8 @@ alias bert="bundle exec rake -T"
 alias doco="docker-compose"
 alias drm="docker ps -aq | xargs docker rm -f"
 alias dps="docker ps -a"
+BUILDKIT_STEP_LOG_MAX_SIZE=-1
+BUILDKIT_STEP_LOG_MAX_SPEED=-1
 
 # Terraform
 alias tf="terraform"
@@ -95,6 +112,8 @@ export PATH="$PATH:$HOME/.npm-packages/bin"
 
 # NVM
 export NVM_DIR=~/.nvm
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 # Ideally "/usr/local/opt/nvm" should come from `brew --prefix nvm` but it is slow
 # . /usr/local/opt/nvm/nvm.sh
 
@@ -121,8 +140,33 @@ function port() {
   lsof -n -i4TCP:$1 | grep LISTEN
 }
 
+# Kill a process using a port (pk = portkill):
+function pk() {
+  port $1 | awk '{print $2}' | xargs -I {} bash -xc 'kill {}'
+}
+
 # Autocompletion for cage
 #source ~/code/dotfiles/cage.bash-completion
 
 #VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Reece AWS Okta login
+function awslogin () {
+    local ACCOUNT=$1
+    if [ -z "${1}" ] ; then
+        echo 'No profile name given, assuming digital-nonprod'
+        ACCOUNT=digital-nonprod
+    fi
+    local env_vars
+    local exit_status
+    env_vars="$(echo '0' | aws-okta env "${ACCOUNT}" -t 8h0m0s)"
+    exit_status=$?
+
+    if [ $exit_status -eq 0 ] ; then
+        export $(echo "${env_vars}")
+    else
+        $(exit $exit_status)
+    fi
+}
+

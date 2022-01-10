@@ -94,28 +94,20 @@ export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rust
 
 # OpenSSL header paths etc (needed for some rust stuff)
 # Ideally "/usr/local/opt/openssl" should come from `brew --prefix openssl` but it is slow
-export OPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include
-export OPENSSL_LIB_DIR=/usr/local/opt/openssl/lib
-export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
+#export OPENSSL_INCLUDE_DIR=/usr/local/opt/openssl/include
+#export OPENSSL_LIB_DIR=/usr/local/opt/openssl/lib
+#export DEP_OPENSSL_INCLUDE=/usr/local/opt/openssl/include
 
 # Java
-export JAVA_HOME=`/usr/libexec/java_home -v 10`
-
-# Heroku
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Postgres
-export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
+#export JAVA_HOME=`/usr/libexec/java_home -v 10`
 
 # NPM
 export PATH="$PATH:$HOME/.npm-packages/bin"
 
 # NVM
 export NVM_DIR=~/.nvm
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-# Ideally "/usr/local/opt/nvm" should come from `brew --prefix nvm` but it is slow
-# . /usr/local/opt/nvm/nvm.sh
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Rust/Cargo
 export PATH="$HOME/.cargo/bin:$PATH"

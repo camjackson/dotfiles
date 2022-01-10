@@ -152,7 +152,7 @@ function awslogin () {
     fi
     local env_vars
     local exit_status
-    env_vars="$(echo '0' | aws-okta env "${ACCOUNT}" -t 8h0m0s)"
+    env_vars="$(aws-okta env "${ACCOUNT}" -t 8h0m0s --mfa-factor-type push)"
     exit_status=$?
 
     if [ $exit_status -eq 0 ] ; then

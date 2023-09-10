@@ -144,22 +144,5 @@ function pk() {
 #VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Reece AWS Okta login
-function awslogin () {
-    local ACCOUNT=$1
-    if [ -z "${1}" ] ; then
-        echo 'No profile name given, assuming digital-nonprod'
-        ACCOUNT=digital-nonprod
-    fi
-    local env_vars
-    local exit_status
-    env_vars="$(aws-okta env "${ACCOUNT}" -t 8h0m0s --mfa-factor-type push)"
-    exit_status=$?
-
-    if [ $exit_status -eq 0 ] ; then
-        export $(echo "${env_vars}")
-    else
-        $(exit $exit_status)
-    fi
-}
-
+# Try to restore screens to proper arrangement
+alias screens='displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 scaling:on origin:(0,0) degree:0" "id:D5C479D3-F0E4-4A16-A650-E8DFEC8DD4AA res:1920x1080 hz:30 color_depth:8 scaling:on origin:(-108,-1080) degree:0" "id:D7E30633-306D-4306-A56E-676B9D7F365B res:1920x1080 hz:75 color_depth:8 scaling:off origin:(1812,-1080) degree:0" "id:A9375828-236A-43A7-A729-AF3B15663873 res:1920x1080 hz:75 color_depth:8 scaling:off origin:(-2028,-1080) degree:0"'

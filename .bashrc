@@ -14,7 +14,7 @@ alias diff="colordiff"
 alias c.="code ."
 
 # Git aliases
-type git-together >/dev/null 2>&1 && alias git=git-together
+#type git-together >/dev/null 2>&1 && alias git=git-together
 alias gs="git status"
 alias gl="git log"
 alias gd="git diff"
@@ -83,6 +83,7 @@ alias bert="bundle exec rake -T"
 alias doco="docker-compose"
 alias drm="docker ps -aq | xargs docker rm -f"
 alias dps="docker ps -a"
+alias drs="drm && colima stop && colima start"
 BUILDKIT_STEP_LOG_MAX_SIZE=-1
 BUILDKIT_STEP_LOG_MAX_SPEED=-1
 

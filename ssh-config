@@ -1,0 +1,11 @@
+# Personal account, set git remotes to: https://github.com-camjackson/{owner}/{repo}.git
+Host github.com-camjackson
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/camjackson
+
+# Work account, set git remotes to: https://github.com-camjackson-bigwx/{owner}/{repo}.git
+Host github.com-camjackson-bigwx
+    Hostname github.com
+    User git
+    IdentityFile ~/.ssh/camjackson-bigwx

@@ -1,15 +1,13 @@
-[user]
-	name = Cam Jackson
-	email = 1930451+camjackson@users.noreply.github.com
 [core]
 	excludesfile = ~/.gitignore_global
 [push]
 	default = simple
+	autoSetupRemote = true
 [log]
-    #abbrevCommit = true
-    #decorate = true
+	#abbrevCommit = true
+	#decorate = true
 [format]
-    #pretty = oneline
+	#pretty = oneline
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -19,3 +17,9 @@
 	defaultBranch = main
 [pull]
 	rebase = true
+
+[includeIf "gitdir:~/code/personal/"]
+	path = .gitconfig-personal
+
+[includeIf "gitdir:~/code/bigw/"]
+	path = .gitconfig-work

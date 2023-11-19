@@ -53,8 +53,12 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
+# Brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Yarn
 alias yws="yarn workspace"
+alias ywsu="yarn workspace ui"
 alias ywsf="yarn workspace frontend"
 alias ywsb="yarn workspace backend"
 
@@ -104,6 +108,7 @@ export RUST_SRC_PATH=~/.multirust/toolchains/stable-x86_64-apple-darwin/lib/rust
 
 # NPM
 export PATH="$PATH:$HOME/.npm-packages/bin"
+source ~/.npm_token.sh
 
 # NVM
 export NVM_DIR=~/.nvm
@@ -144,5 +149,5 @@ function pk() {
 #VSCode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Try to restore screens to proper arrangement
-alias screens='displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 scaling:on origin:(0,0) degree:0" "id:D5C479D3-F0E4-4A16-A650-E8DFEC8DD4AA res:1920x1080 hz:30 color_depth:8 scaling:on origin:(-108,-1080) degree:0" "id:D7E30633-306D-4306-A56E-676B9D7F365B res:1920x1080 hz:75 color_depth:8 scaling:off origin:(1812,-1080) degree:0" "id:A9375828-236A-43A7-A729-AF3B15663873 res:1920x1080 hz:75 color_depth:8 scaling:off origin:(-2028,-1080) degree:0"'
+# Restore screens to proper arrangement
+alias screens='displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:3A521C1B-0026-4063-9386-1B9697ECAC49 res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-99,-1080) degree:0" "id:3A7842FF-666E-484F-804B-DF2F5E817058 res:1920x1080 hz:75 color_depth:8 enabled:true scaling:off origin:(1821,-1080) degree:0" "id:9665D113-DFDD-4ED2-945E-48B26F1961D6 res:1920x1080 hz:75 color_depth:8 enabled:true scaling:off origin:(-2019,-1080) degree:0"'

@@ -10,7 +10,7 @@
   "editor.dragAndDrop": false,
   "editor.detectIndentation": false,
   "editor.renderLineHighlightOnlyWhenFocus": true,
-  "editor.rulers": [80],
+  "editor.rulers": [80, 120],
   "files.enableTrash": false,
   "files.trimTrailingWhitespace": true,
   "search.useGlobalIgnoreFiles": true,
@@ -30,10 +30,9 @@
   },
   "vsicons.dontShowNewVersionMessage": true,
   "editor.suggest.showSnippets": false,
-  "editor.wordBasedSuggestions": false,
+  "editor.wordBasedSuggestions": "off",
   "javascript.suggest.names": false,
   "explorer.autoReveal": false,
-  "workbench.editor.untitled.hint": "hidden",
   "eslint.nodePath": "",
   "macros": {
     "commentLine": ["editor.action.commentLine", "cursorDown"]
@@ -50,5 +49,8 @@
   "explorer.confirmDragAndDrop": false,
   "gitlens.showWhatsNewAfterUpgrades": false,
   "gitlens.showWelcomeOnInstall": false,
-  "svelte.enable-ts-plugin": true
+  "svelte.enable-ts-plugin": true,
+  "workbench.editor.empty.hint": "hidden",
+  "liveshare.launcherClient": "visualStudioCode",
+  "liveshare.connectionMode": "relay"
 }

@@ -1,7 +1,6 @@
 {
   "files.autoSave": "onFocusChange",
   "rust.clippy_preference": "on",
-  "editor.formatOnSave": true,
   "workbench.editor.enablePreview": false,
   "editor.scrollBeyondLastLine": false,
   "files.trimFinalNewlines": true,
@@ -52,5 +51,9 @@
   "svelte.enable-ts-plugin": true,
   "workbench.editor.empty.hint": "hidden",
   "liveshare.launcherClient": "visualStudioCode",
-  "liveshare.connectionMode": "relay"
+  "liveshare.connectionMode": "relay",
+  "window.zoomLevel": 1,
+  "editor.formatOnSave": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "workbench.editor.wrapTabs": true
 }

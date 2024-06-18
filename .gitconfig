@@ -4,6 +4,7 @@
 	default = simple
 	autoSetupRemote = true
 [log]
+	date = format: %a %Y-%m-%d %H:%M:%S %z
 	#abbrevCommit = true
 	#decorate = true
 [format]

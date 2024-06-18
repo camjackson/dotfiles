@@ -63,6 +63,7 @@ alias yws="yarn workspace"
 alias ywsu="yarn workspace ui"
 alias ywsf="yarn workspace frontend"
 alias ywsb="yarn workspace backend"
+alias jw="yarn workspace ui test:jest:watch"
 
 # Pulumi
 alias plm="pulumi"
@@ -116,6 +117,12 @@ source ~/.npm_token.sh
 export NVM_DIR=~/.nvm
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# This version of node was installed in a rosetta terminal. Need this when yarning a package that doesn't build on ARM
+alias intel="nvm use 18.18"
+
+# Do the dance of switching node versions back and forth for installing packages
+alias inst="intel && yarn && nvm use && yarn"
 
 # Rust/Cargo
 export PATH="$HOME/.cargo/bin:$PATH"

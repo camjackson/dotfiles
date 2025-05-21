@@ -55,5 +55,68 @@
   "window.zoomLevel": 1,
   "editor.formatOnSave": true,
   "typescript.tsserver.experimental.enableProjectDiagnostics": true,
-  "workbench.editor.wrapTabs": true
+  "workbench.editor.wrapTabs": true,
+  "editor.lightbulb.enabled": "off",
+  "redhat.telemetry.enabled": false,
+  "snyk.yesWelcomeNotification": false,
+  "snyk.advanced.cliPath": "/Users/cam/Library/Application Support/snyk-ls/snyk-macos-arm64",
+  "snyk.folderConfigs": [
+    {
+      "folderPath": "/Users/cam/code/bigw/storefront",
+      "baseBranch": "main",
+      "localBranches": [
+        "develop",
+        "devtoolsloader",
+        "feature/BWXPP-1763_remove-50-character-limit",
+        "optly-cleanup",
+        "BWXQQ-119-hookup-nextgen",
+        "BWXQQ-158-cache-operations",
+        "BWXQQ-product-mapping",
+        "binding-types",
+        "button-colour-test",
+        "feature/csm-1101-chat-entry-FTAbutton",
+        "fix/csm-1101-chat-entry-FTAbutton-widget-failsToReturn",
+        "hackathon-ar",
+        "main",
+        "next-gen-pricing",
+        "no-fc-codemod",
+        "optly-redo",
+        "product-namespace-elimination",
+        "query-keys",
+        "react-query-defaults",
+        "react-query-dehydration",
+        "waterfall-detection"
+      ]
+    }
+  ],
+  "snyk.trustedFolders": [
+    "/Users/cam/code/bigw/storefront",
+    "/Users/cam/code/bigw/product-api",
+    "/Users/cam/code/bigw/product-api",
+    "/Users/cam/code/bigw/mfes/bigw-backoffice-app-shell",
+    "/Users/cam/code/bigw/mfes/bigw-backoffice-app-shell",
+    "/Users/cam/code/bigw/mfes/backoffice-app-shell",
+    "/Users/cam/code/bigw/gtm-config",
+    "/Users/cam/code/bigw/gtm-config",
+    "/Users/cam/code/bigw/personalisation",
+    "/Users/cam/code/bigw/personalisation",
+    "/Users/cam/code/bigw/dashcow",
+    "/Users/cam/code/bigw/dashcow",
+    "/Users/cam/code/bigw/popularity",
+    "/Users/cam/code/bigw/rsc-spike",
+    "/Users/cam/code/personal/react-rs",
+    "/Users/cam/code/personal/jsx-rs",
+    "/Users/cam/code/personal/donna",
+    "/Users/cam/code/personal/spider-hypermobility-questionnaire",
+    "/Users/cam/code/personal/spider-hypermobility-questionnaire",
+    "/Users/cam/code/bigw/shared-queries",
+    "/Users/cam/code/personal/r3f-experiments",
+    "/Users/cam/code/bigw/graphos-router",
+    "/Users/cam/code/bigw/platform-infrastructure-live"
+  ],
+  "docker.extension.dockerEngineAvailabilityPrompt": false,
+  "vscode_custom_css.imports": [
+    "file:///Users/cam/code/personal/dotfiles/vscode/pretty-ts-errors-hack.css"
+  ],
+  "git.openRepositoryInParentFolders": "never"
 }

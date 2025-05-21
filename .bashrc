@@ -43,12 +43,15 @@ alias gco="git checkout"
 alias gb="git branch"
 alias gbd="git branch -D"
 alias gu="git reset HEAD"
-alias stash="git stash"
+alias stash="git stash --keep"
 alias pop="git stash pop"
 alias grv="git remote -v"
 alias gcl="git clone"
 function ghcl() {
   git clone git@github.com:${1}/${2}
+}
+function deleted() {
+  git log --pretty=oneline -S"${1}"
 }
 
 if [ -f ~/.git-completion.bash ]; then
@@ -64,6 +67,8 @@ alias ywsu="yarn workspace ui"
 alias ywsf="yarn workspace frontend"
 alias ywsb="yarn workspace backend"
 alias jw="yarn workspace ui test:jest:watch"
+alias tw="yarn workspace ui test:tsc --watch"
+alias yb="yarn betterer"
 
 # Pulumi
 alias plm="pulumi"
@@ -160,3 +165,4 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 
 # Restore screens to proper arrangement
 alias screens='displayplacer "id:37D8832A-2D66-02CA-B9F7-8F30A301B230 res:1728x1117 hz:120 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:3A521C1B-0026-4063-9386-1B9697ECAC49 res:1920x1080 hz:60 color_depth:8 enabled:true scaling:off origin:(-99,-1080) degree:0" "id:3A7842FF-666E-484F-804B-DF2F5E817058 res:1920x1080 hz:75 color_depth:8 enabled:true scaling:off origin:(1821,-1080) degree:0" "id:9665D113-DFDD-4ED2-945E-48B26F1961D6 res:1920x1080 hz:75 color_depth:8 enabled:true scaling:off origin:(-2019,-1080) degree:0"'
+source "/Users/cam/.rover/env"
